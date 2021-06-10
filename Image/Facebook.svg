@@ -1,0 +1,8 @@
+<svg id="Facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.507" height="14" viewBox="0 0 33.507 14">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="vectorMask" d="M595.252,470.006H593.29V477h-2.908v-6.994H589v-2.472h1.382v-1.6A2.727,2.727,0,0,1,593.317,463l2.155.008v2.4h-1.564a.592.592,0,0,0-.617.673v1.453h2.216Z" transform="translate(-589 -463)" fill="#fafdff"/>
+    </clipPath>
+  </defs>
+  <path id="Mask" d="M595.252,470.006H593.29V477h-2.908v-6.994H589v-2.472h1.382v-1.6A2.727,2.727,0,0,1,593.317,463l2.155.008v2.4h-1.564a.592.592,0,0,0-.617.673v1.453h2.216Z" transform="translate(-589 -463)" fill="#fafdff"/>
+</svg>

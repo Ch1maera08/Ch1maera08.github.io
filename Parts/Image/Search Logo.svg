@@ -1,0 +1,8 @@
+<svg id="Search_Logo" data-name="Search Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.048" height="34.048" viewBox="0 0 34.048 34.048">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="vectorMask" d="M31.146,34.048h0l-9.731-9.712V22.8l-.526-.545a12.671,12.671,0,1,1,1.363-1.363l.545.526h1.538l9.713,9.735-2.9,2.9ZM12.653,3.893a8.76,8.76,0,1,0,8.76,8.76A8.77,8.77,0,0,0,12.653,3.893Z" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <path id="Mask" d="M31.146,34.048h0l-9.731-9.712V22.8l-.526-.545a12.671,12.671,0,1,1,1.363-1.363l.545.526h1.538l9.713,9.735-2.9,2.9ZM12.653,3.893a8.76,8.76,0,1,0,8.76,8.76A8.77,8.77,0,0,0,12.653,3.893Z" transform="translate(0)" fill="#fff"/>
+</svg>

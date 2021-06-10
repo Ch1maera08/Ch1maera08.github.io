@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+      <link rel="shorcut icon" href="image/BWLogo.png">
+      <title>navbar</title>
+  </head>
+    <body>
+        <nav class="navbar">
+            <div id="search-bar-overlay" class="search-bar-overlay">
+                <input type="text" id="search-bar" placeholder="Let's see if we have what you want...">
+                <button onclick="closeSearch()" id="darken-search-overlay"></button>
+            </div>
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                <a href="index.html"><img src="Image/BW Logo Full.png" alt="logo"></a>
+                </div>
+                <div class="left-navbar">
+                    <li id="manga-navbar">
+                        <a href="product listing.html">Manga<span class="chevron bottom"></span></a>
+                    </li>
+                    <div class="manga-categories-navbar" id="manga-categories-navbar">
+                        <div class="manga-categories-text-container">
+                            <div class="categories-container">
+                                <li><a href="product category listing.html">Action</a></li>
+                                <li><a href="product category listing.html">Adventure</a></li>
+                                <li><a href="product category listing.html">Anime Adapted</a></li>
+                                <li><a href="product category listing.html">Best Selling</a></li>
+                                <li><a href="product category listing.html">Comedy</a></li>
+                                <li><a href="product category listing.html">Drama</a></li>
+                            </div>
+                            <div class="categories-container">
+                                <li><a href="product category listing.html">Ecchi</a></li>
+                                <li><a href="product category listing.html">Fantaasy</a></li>
+                                <li><a href="product category listing.html">Food</a></li>
+                                <li><a href="product category listing.html">Gender Bender</a></li>
+                                <li><a href="product category listing.html">Harem</a></li>
+                                <li><a href="product category listing.html">Horror</a></li>
+                            </div>
+                            <div class="categories-container">
+                                <li><a href="product category listing.html">Magic</a></li>
+                                <li><a href="product category listing.html">Mecha</a></li>
+                                <li><a href="product category listing.html">Mystery</a></li>
+                                <li><a href="product category listing.html">Shoujo</a></li>
+                                <li><a href="product category listing.html">Shounen</a></li>
+                                <li><a href="product category listing.html">Slice of Life</a></li>
+                            </div>
+                            <div class="categories-container">
+                                <li><a href="product category listing.html">Supernatural</a></li>
+                                <li><a href="product category listing.html">Yuri</a></li>
+                                <li><a href="product category listing.html">Yaoi</a></li>
+                                <li><a href="product category listing.html">Young Adult</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <li id="ln-navbar">
+                        <a href="product listing.html">Light Novel<span class="chevron bottom"></span></a>
+                    </li>
+                    <div class="ln-categories-navbar">
+                        <div class="ln-categories-text-container">
+                            <div class="categories-container">
+                                <li><a href="product category listing.html">Action</a></li>
+                                <li><a href="product category listing.html">Adventure</a></li>
+                                <li><a href="product category listing.html">Anime Adapted</a></li>
+                                <li><a href="product category listing.html">Best Selling</a></li>
+                                <li><a href="product category listing.html">Comedy</a></li>
+                                <li><a href="product category listing.html">Drama</a></li>
+                            </div>
+                            <div class="categories-container">
+                                <li><a href="product category listing.html">Ecchi</a></li>
+                                <li><a href="product category listing.html">Fantaasy</a></li>
+                                <li><a href="product category listing.html">Food</a></li>
+                                <li><a href="product category listing.html">Gender Bender</a></li>
+                                <li><a href="product category listing.html">Harem</a></li>
+                                <li><a href="product category listing.html">Horror</a></li>
+                            </div>
+                            <div class="categories-container">
+                                <li><a href="product category listing.html">Magic</a></li>
+                                <li><a href="product category listing.html">Mecha</a></li>
+                                <li><a href="product category listing.html">Mystery</a></li>
+                                <li><a href="product category listing.html">Shoujo</a></li>
+                                <li><a href="product category listing.html">Shounen</a></li>
+                                <li><a href="product category listing.html">Slice of Life</a></li>
+                            </div>
+                            <div class="categories-container">
+                                <li><a href="product category listing.html">Supernatural</a></li>
+                                <li><a href="product category listing.html">Yuri</a></li>
+                                <li><a href="product category listing.html">Yaoi</a></li>
+                                <li><a href="product category listing.html">Young Adult</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-navbar">
+                    <li id="search-logo"><button onclick="openSearch()"><img src="Image/Search Logo.svg" alt="Search"></button></li>
+                    <li id="shopping-cart"><a href="cart-empty.html"><img src="image/Shopping Cart.svg" alt="Cart"></a></li>
+                    <li id="shopping-cart-fill"><a href="cart.html"><img src="image/Shopping Cart Fill.svg" alt="Cart"></a></li>
+                    <li id="username-navbar">
+                        <a href="#">Username<span class="chevron bottom"></span></a>
+                    </li>
+                    <div class="username-categories-navbar">
+                        <div class="username-categories-text-container">
+                            <div class="categories-container">
+                                <li><a href="#">Whislist</a></li>
+                                <li><a href="#">Inbox</a></li>
+                                <li><a href="#">Library</a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="Welcome.html">Sign out</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <li ><button onclick="toggleNav()" id="hamburger-menu"><img src="Image/Hamburger Menu.svg" alt="Search"></button></li>
+                </div>
+            </div>
+            <div id= "mobile-dropdown" class="mobile-dropdown">
+                <div class="navbar-mobile-manga">
+                    <button onclick="toggleMangaCat()" class="navbar-mobile-title">
+                        <h1>Manga</h1>
+                        <div class="chevron bottom mobile"></div>
+                    </button>
+                    <div id="manga-mobile-list">
+                        <li><a href="product category listing.html">Action</a></li>
+                        <li><a href="product category listing.html">Adventure</a></li>
+                        <li><a href="product category listing.html">Anime Adapted</a></li>
+                        <li><a href="product category listing.html">Best Selling</a></li>
+                        <li><a href="product category listing.html">Comedy</a></li>
+                        <li><a href="product category listing.html">Drama</a></li>
+                        <li><a href="product category listing.html">Magic</a></li>
+                        <li><a href="product category listing.html">Mecha</a></li>
+                        <li><a href="product category listing.html">Mystery</a></li>
+                        <li><a href="product category listing.html">Shoujo</a></li>
+                        <li><a href="product category listing.html">Shounen</a></li>
+                        <li><a href="product category listing.html">Slice of Life</a></li>
+                        <li><a href="product category listing.html">Supernatural</a></li>
+                        <li><a href="product category listing.html">Yuri</a></li>
+                        <li><a href="product category listing.html">Yaoi</a></li>
+                        <li><a href="product category listing.html">Young Adult</a></li>
+                    </div>
+                </div>
+                <div class="navbar-mobile-ln">
+                    <button onclick="toggleLNCat()" class="navbar-mobile-title">
+                        <h1>Light Novel</h1>
+                        <div class="chevron bottom mobile"></div>
+                    </button>
+                    <div id="ln-mobile-list">
+                        <li><a href="product category listing.html">Action</a></li>
+                        <li><a href="product category listing.html">Adventure</a></li>
+                        <li><a href="product category listing.html">Anime Adapted</a></li>
+                        <li><a href="product category listing.html">Best Selling</a></li>
+                        <li><a href="product category listing.html">Comedy</a></li>
+                        <li><a href="product category listing.html">Drama</a></li>
+                        <li><a href="product category listing.html">Magic</a></li>
+                        <li><a href="product category listing.html">Mecha</a></li>
+                        <li><a href="product category listing.html">Mystery</a></li>
+                        <li><a href="product category listing.html">Shoujo</a></li>
+                        <li><a href="product category listing.html">Shounen</a></li>
+                        <li><a href="product category listing.html">Slice of Life</a></li>
+                        <li><a href="product category listing.html">Supernatural</a></li>
+                        <li><a href="product category listing.html">Yuri</a></li>
+                        <li><a href="product category listing.html">Yaoi</a></li>
+                        <li><a href="product category listing.html">Young Adult</a></li>
+                    </div>
+                </div>
+                <div class="navbar-mobile-user">
+                    <button onclick="toggleUserCat()" class="navbar-mobile-title">
+                        <h1>Profile</h1>
+                        <div class="chevron bottom mobile"></div>
+                    </button>
+                    <div id="user-mobile-list">
+                        <li><a href="#">Whislist</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="welcome.html">Sign out</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.32" height="8.967" viewBox="0 0 14.32 8.967">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="vectorMask" d="M214.492,219.082h0a1.278,1.278,0,0,1,1.808,0l4.978,4.967h0l4.978-4.967a1.278,1.278,0,0,1,1.808,0h0a1.277,1.277,0,0,1,0,1.807l-6.785,6.785h0l-6.785-6.785A1.276,1.276,0,0,1,214.492,219.082Z" transform="translate(-214.118 -218.707)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Chevron_down" data-name="Chevron down" transform="translate(-214.118 -218.707)">
+    <path id="Mask" d="M214.492,219.082h0a1.278,1.278,0,0,1,1.808,0l4.978,4.967h0l4.978-4.967a1.278,1.278,0,0,1,1.808,0h0a1.277,1.277,0,0,1,0,1.807l-6.785,6.785h0l-6.785-6.785A1.276,1.276,0,0,1,214.492,219.082Z" transform="translate(0)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+      <link rel="shorcut icon" href="image/BWLogo.png">
+      <title>Mangas</title>
+  </head>
+  <body>
+    <!-- Background gradient/!-->
+    <div class= "background-gradient">
+      <!-- Navigation Bar-->
+      <nav class="navbar">
+        <div id="search-bar-overlay" class="search-bar-overlay">
+            <input type="text" id="search-bar" placeholder="Let's see if we have what you want...">
+            <button onclick="closeSearch()" id="darken-search-overlay"></button>
+        </div>
+        <div class="navbar-container">
+            <div class="navbar-logo">
+            <a href="index no login.html"><img src="Image/BW Logo Full.png" alt="logo"></a>
+            </div>
+            <div class="left-navbar">
+                <li id="manga-navbar">
+                    <a href="product listing no login.html">Manga<span class="chevron bottom"></span></a>
+                </li>
+                <div class="manga-categories-navbar" id="manga-categories-navbar">
+                    <div class="manga-categories-text-container">
+                        <div class="categories-container">
+                            <li><a href="product category listing no login.html">Action</a></li>
+                            <li><a href="product category listing no login.html">Adventure</a></li>
+                            <li><a href="product category listing no login.html">Anime Adapted</a></li>
+                            <li><a href="product category listing no login.html">Best Selling</a></li>
+                            <li><a href="product category listing no login.html">Comedy</a></li>
+                            <li><a href="product category listing no login.html">Drama</a></li>
+                        </div>
+                        <div class="categories-container">
+                            <li><a href="product category listing no login.html">Ecchi</a></li>
+                            <li><a href="product category listing no login.html">Fantaasy</a></li>
+                            <li><a href="product category listing no login.html">Food</a></li>
+                            <li><a href="product category listing no login.html">Gender Bender</a></li>
+                            <li><a href="product category listing no login.html">Harem</a></li>
+                            <li><a href="product category listing no login.html">Horror</a></li>
+                        </div>
+                        <div class="categories-container">
+                            <li><a href="product category listing no login.html">Magic</a></li>
+                            <li><a href="product category listing no login.html">Mecha</a></li>
+                            <li><a href="product category listing no login.html">Mystery</a></li>
+                            <li><a href="product category listing no login.html">Shoujo</a></li>
+                            <li><a href="product category listing no login.html">Shounen</a></li>
+                            <li><a href="product category listing no login.html">Slice of Life</a></li>
+                        </div>
+                        <div class="categories-container">
+                            <li><a href="product category listing no login.html">Supernatural</a></li>
+                            <li><a href="product category listing no login.html">Yuri</a></li>
+                            <li><a href="product category listing no login.html">Yaoi</a></li>
+                            <li><a href="product category listing no login.html">Young Adult</a></li>
+                        </div>
+                    </div>
+                </div>
+                <li id="ln-navbar">
+                    <a href="product listing no login.html">Light Novel<span class="chevron bottom"></span></a>
+                </li>
+                <div class="ln-categories-navbar">
+                    <div class="ln-categories-text-container">
+                        <div class="categories-container">
+                            <li><a href="product category listing no login.html">Action</a></li>
+                            <li><a href="product category listing no login.html">Adventure</a></li>
+                            <li><a href="product category listing no login.html">Anime Adapted</a></li>
+                            <li><a href="product category listing no login.html">Best Selling</a></li>
+                            <li><a href="product category listing no login.html">Comedy</a></li>
+                            <li><a href="product category listing no login.html">Drama</a></li>
+                        </div>
+                        <div class="categories-container">
+                            <li><a href="product category listing no login.html">Ecchi</a></li>
+                            <li><a href="product category listing no login.html">Fantaasy</a></li>
+                            <li><a href="product category listing no login.html">Food</a></li>
+                            <li><a href="product category listing no login.html">Gender Bender</a></li>
+                            <li><a href="product category listing no login.html">Harem</a></li>
+                            <li><a href="product category listing no login.html">Horror</a></li>
+                        </div>
+                        <div class="categories-container">
+                            <li><a href="product category listing no login.html">Magic</a></li>
+                            <li><a href="product category listing no login.html">Mecha</a></li>
+                            <li><a href="product category listing no login.html">Mystery</a></li>
+                            <li><a href="product category listing no login.html">Shoujo</a></li>
+                            <li><a href="product category listing no login.html">Shounen</a></li>
+                            <li><a href="product category listing no login.html">Slice of Life</a></li>
+                        </div>
+                        <div class="categories-container">
+                            <li><a href="product category listing no login.html">Supernatural</a></li>
+                            <li><a href="product category listing no login.html">Yuri</a></li>
+                            <li><a href="product category listing no login.html">Yaoi</a></li>
+                            <li><a href="product category listing no login.html">Young Adult</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-navbar">
+                <li id="search-logo"><button onclick="openSearch()"><img src="Image/Search Logo.svg" alt="Search"></button></li>
+                <li id="login-after"><a href="loginpage.html">Login</a></li>
+                <li id="sign-up"><a href="Sign up.html">Sign up</a></li>
+                <li ><button onclick="toggleNav()" id="hamburger-menu"><img src="Image/Hamburger Menu.svg" alt="Search"></button></li>
+            </div>
+        </div>
+        <div id= "mobile-dropdown" class="mobile-dropdown">
+            <div class="navbar-mobile-manga">
+                <button onclick="toggleMangaCat()" class="navbar-mobile-title">
+                    <h1>Manga</h1>
+                    <div class="chevron bottom mobile"></div>
+                </button>
+                <div id="manga-mobile-list">
+                    <li><a href="product category listing no login.html">Action</a></li>
+                    <li><a href="product category listing no login.html">Adventure</a></li>
+                    <li><a href="product category listing no login.html">Anime Adapted</a></li>
+                    <li><a href="product category listing no login.html">Best Selling</a></li>
+                    <li><a href="product category listing no login.html">Comedy</a></li>
+                    <li><a href="product category listing no login.html">Drama</a></li>
+                    <li><a href="product category listing no login.html">Magic</a></li>
+                    <li><a href="product category listing no login.html">Mecha</a></li>
+                    <li><a href="product category listing no login.html">Mystery</a></li>
+                    <li><a href="product category listing no login.html">Shoujo</a></li>
+                    <li><a href="product category listing no login.html">Shounen</a></li>
+                    <li><a href="product category listing no login.html">Slice of Life</a></li>
+                    <li><a href="product category listing no login.html">Supernatural</a></li>
+                    <li><a href="product category listing no login.html">Yuri</a></li>
+                    <li><a href="product category listing no login.html">Yaoi</a></li>
+                    <li><a href="product category listing no login.html">Young Adult</a></li>
+                </div>
+            </div>
+            <div class="navbar-mobile-ln">
+                <button onclick="toggleLNCat()" class="navbar-mobile-title">
+                    <h1>Light Novel</h1>
+                    <div class="chevron bottom mobile"></div>
+                </button>
+                <div id="ln-mobile-list">
+                    <li><a href="product category listing no login.html">Action</a></li>
+                    <li><a href="product category listing no login.html">Adventure</a></li>
+                    <li><a href="product category listing no login.html">Anime Adapted</a></li>
+                    <li><a href="product category listing no login.html">Best Selling</a></li>
+                    <li><a href="product category listing no login.html">Comedy</a></li>
+                    <li><a href="product category listing no login.html">Drama</a></li>
+                    <li><a href="product category listing no login.html">Magic</a></li>
+                    <li><a href="product category listing no login.html">Mecha</a></li>
+                    <li><a href="product category listing no login.html">Mystery</a></li>
+                    <li><a href="product category listing no login.html">Shoujo</a></li>
+                    <li><a href="product category listing no login.html">Shounen</a></li>
+                    <li><a href="product category listing no login.html">Slice of Life</a></li>
+                    <li><a href="product category listing no login.html">Supernatural</a></li>
+                    <li><a href="product category listing no login.html">Yuri</a></li>
+                    <li><a href="product category listing no login.html">Yaoi</a></li>
+                    <li><a href="product category listing no login.html">Young Adult</a></li>
+                </div>
+            </div>
+            <div class="navbar-mobile-user">
+                <button onclick="toggleUserCat()" class="navbar-mobile-title">
+                    <h1>Profile</h1>
+                    <div class="chevron bottom mobile"></div>
+                </button>
+                <div id="user-mobile-list">
+                    <li><a href="loginpage.html">Login</a></li>
+                    <li><a href="Sign up.html">Sign up</a></li>
+                </div>
+            </div>
+        </div>
+      </nav>
+      <!-- Breadcrumb -->
+      <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-items"><a href="index no login.html">Home</a></li>
+          <li class="breadcrumb-items"><a href="#">Mangas</a></li>
+        </ul>
+      </div>
+      <!-- Category Title -->
+      <div class="product-category-title">
+        <h1>Mangas</h1>
+        <p>Basically light novels with more added pictures</p>
+      </div>
+      <!-- Product -->
+      <div class="product-listing-container">
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/nobu.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                       The novels center on a bar called "Nobu"—located in Kyoto, Japan, but with a door that is connected to the bar in another world.
+                       The visitors include denizens of the other world, and customers seek out its excellent "Toriaezu Nama" ale and cuisine.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Isekai Izakaya</h3>
+                   <p>Natsuya Semikawa</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Natsuya Semikawa</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Attack on Titan.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls.
+                        What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter.
+                        However, that fragile calm is soon shattered when a colossal titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.
+                        After witnessing a horrific personal loss at the hands of the invading creatures,
+                        Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Based on Hajime Isayama's award-winning manga, Shingeki no Kyojin follows Eren, along with his adopted sister Mikasa Ackerman and his childhood friend Armin Arlert, as they join the brutal war against the titans and race to discover a way of defeating them before the last walls are breached.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Attack on Titan Ch.139</h3>
+                  <p>Hajime Isayama</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Attack on Titan Ch.139</h3>
+                <p>Hajime Isayama</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Horimiya.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A sweet ""aww""-inspiring tale of school life begins!!At school, Kyouko Hori is known for being smart, attractive, and popular. 
+                        On the other hand, her classmate, the boring, gloomy Izumi Miyamura tends to get painted as a ""loser fanboy."" But when a liberally pierced and tattooed (not to mention downright gorgeous) 
+                        Miyamura appears unexpectedly on the doorstep of secretly plain-Jane homebody Hori, these two similarly dissimilar teenagers discover that there are multiple sides to every story...and person!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Horimiya</h3>
+                   <p>Hero</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Horimiya</h3>
+                <p>Hero</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product"></div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Bofuri.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        When it comes to the VRMMO NewWorld Online, Kaede Honjou isn't your run-of-the-mill greenhorn gamer. Forgoing a typical stat allocation for her Great Shielder, 
+                        Maple, she pumps all her points into defense from the get-go! Her reasoning? "I don't want to get hurt." With no magic, agility, or strength to speak of, 
+                        this walking fortress will have to get creative to beat the baddies early on. But little does she know that her pure-stat build will propel her to chaotic 
+                        new heights that even the game admins couldn't account for! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1000</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Bofuri Vol. 1</h3>
+                   <p>Jirou Oimoto</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Natsuya Semikawa</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Slime.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A MEETING OF DEMONIC MINDS!Newly minted demon lord Rimuru has received word of a special assembly of all ten demon lords known as the Walpurgis Council. 
+                        It just so happens that the topic of this particular meeting is how best to punish Rimuru for assuming his new title without their permission.Fortunately, he's got friends in high places who are willing to vouch for his authenticity, and this council could be the perfect opportunity to get revenge on the demon lord Clayman 
+                        for the violence he brought to Tempest. Is this blobby big shot cunning enough to kill two birds with one stone? 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>That Time I Got Reincarnated as a Slime, Vol. 6</h3>
+                   <p>Fuse</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>That Time I Got Reincarnated as a Slime, Vol. 6</h3>
+                <p>Fuse</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product"></div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Dad Vtuber.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        It's bad enough that Takashi's dad is secretly the ultra-popular 'Queen of VTubers', Kizuke Yai, but his mom's a struggling streamer who just can't seem to gain any popularity at all! 
+                        Now the poor boy himself has been roped into the VTubing life, and the hapless young lad has to help both of his parents without the other finding out! Join Takashi as he weathers the 
+                        hellish storm his life has become, all while navigating the trials and tribulations that come with having parents who are just a little bit too online
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>My Dad is the Queen of All VTubers?! Vol. 2</h3>
+                  <p>Wataru Akashingo</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>My Dad is the Queen of All VTubers?! Vol. 2</h3>
+                <p>Wataru Akashingo</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/spider so wat.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Man, becoming the hero of all humans at the age of six? That's rough buddy. But you know, sometimes life is like that. 
+                        Hang in there kid and maybe I'll...wait, what do you mean I don't show up at all this time?! This is outrageous!! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>So I'm a Spider, So What?, Vol. 11</h3>
+                   <p>Okina Baba</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>So I'm a Spider, So What?, Vol. 11</h3>
+                <p>Okina Baba</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="pre-order-product">Pre-Order</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Cooking Isekai.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        It's great being a hero! Super powers, loved by every-- wait, what? Brought over by mistake? These stats are awful, and the kingdom sure seems sketchy...
+                        And so begins Mukouda Tsuyoshi's life in another world. And if he thought his strength was bad, his special skill is... accessing his old online supermarket?! It's useless for combat, but if he plays his cards right, there's gold in rare goods. At least, that's what Mukouda thinks, but it turns out his modern food might be more special than it appears - and in this world, 
+                        Japanese food isn't an everyday sight! Quiet days lead to silent storms, especially once a gluttonous fenrir starts causing trouble and asking for seconds! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 600</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Campfire Cooking in Another World with My Absurd Skill Volume 1</h3>
+                   <p>Akagishi K/p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Campfire Cooking in Another World with My Absurd Skill Volume 1</h3>
+                <p>Akagishi K</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Grand Blue Dreaming.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        After moving out on his own to a seaside town, Iori Kitahara makes a college debut he never anticipated. 
+                        A new chapter of his life unfolds, full of diving with beautiful girls and shenanigans with a gaggle of lovable bastards! 
+                        Idiot-expert Kenji Inoue and au naturel authority Kimitake Yoshioka bring you a glorious college tale filled with booze-fueled antics! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 200</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Grand Blue Dreaming Chapter 50</h3>
+                   <p>Kenji Inoue</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Grand Blue Dreaming Chapter 50</h3>
+                <p>Kenji Inoue</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Rent a Girlfriend.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Anime coming July 2020! You can rent a girlfriend, but can you buy love? Reeling from a bad breakup, Kazuya rents the beautiful, polite Chizuru for a date. But rock bottom might be so much lower than he thought! Chizuru is much more than the pretty face and sweet demeanor he thought he'd bargained for...
+                        In today's Japan, ""rental"" services can deliver an afternoon with a ""friend,"" a ""parent,"" even a fake girlfriend! After a staggering betrayal by his girlfriend, hapless freshman Kazuya gets just desperate enough to give it a try. 
+                        But he quickly discovers how complicated it can be to ""rent"" an emotional connection, and his new ""girlfriend,"" who's trying to keep her side hustle secret, will panic when she finds out her real life and Kazuya's are intertwined in surprising ways! 
+                        Family, school, and life all start to go wrong, too... It's sweet but naïve boy meets cute but ruthless girl in this 21st-century manga rom-com! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Rent-A-Girlfriend 1</h3>
+                  <p>Reiji Miyajima</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Rent-A-Girlfriend 1</h3>
+                <p>Reiji Miyajima</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="sale-product">Sale</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Soul Eater.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Maka is a weapon meister, determined to turn her partner, a living scythe named Soul Eater, into a powerful death scythe - 
+                        the ultimate weapon of Death himself! Charged with the task of collecting and devouring the tainted souls of ninety-nine humans and one witch, Maka and her fellow meisters strive to master their weapons as they face off against 
+                        the bizarre and dangerous minions of the underworld. But the meisters' own personal quirks may prove a bigger obstacle than any sultry enchantress! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Soul Eater, Vol. 1</h3>
+                   <p>Atsushi Ohkubo</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Soul Eater, Vol. 1</h3>
+                <p>Atsushi Ohkubo</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Mushoku Tensei.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A Second Chance at Life!
+                        Just when an unemployed thirty-four-year-old otaku reaches a dead end in life and decides that it’s time to turn over a new leaf?he gets run over by a truck and dies! 
+                        Shockingly, he finds himself reborn into an infant’s body in a strange, new world of swords and magic. His new identity is Rudeus Grayrat, but he still retains the memories 
+                        of his previous life. Follow Rudeus from infancy to adulthood, as he struggles to redeem himself in a wondrous yet dangerous world.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1000</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Mushoku Tensei: Jobless Reincarnation Vol. 1</h3>
+                   <p>Rifujin na Magonote</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Rifujin na Magonote</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="pre-order-product">Pre-Order</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Doughnuts.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          A yuri romance for the modern career woman!
+                          Uno Hinako throws herself into makeup, fashion, and falling in love, hoping that will make her seem "normal" to the other people at her job. 
+                          But no matter how hard she tries, she's a self-doubting mess inside, and her attempts at "normal" romance with men just keep failing. When she starts to think she might be alone forever, 
+                          a new normal presents itself in the form of her relationship with Asahi Sato, a level-headed woman who works at her company. It starts as respect, and then it becomes far more intimate.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Doughnuts Under a Crescent Moon Vol. 1</h3>
+                   <p>Shio Usui</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Doughnuts Under a Crescent Moon Vol. 1</h3>
+                <p>Shio Usui</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Yuri Fujoshi.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          Meet Reiji Yoshida: a yuri otaku that loves yuri more than anything else in the world. All he wants is to enjoy his hobby in peace, but trouble ensues when he crosses paths with Mitsuru Hoshina, a fujoshi who is obsessed with boys' love. Hijinks ensue, and a vengeful ghost residing in their school's manga club swaps their bodies!
+                          Polar opposites in both personalities and hobbies clash in this exciting first volume—follow the adventures of their comedic body swap experiences!
+                          Meet Reiji Yoshida: a yuri otaku that loves yuri more than anything else in the world. All he wants is to enjoy his hobby in peace, but trouble ensues when he crosses paths with Mitsuru Hoshina, a fujoshi who is obsessed with boys' love. Hijinks ensue, and a vengeful ghost residing in their school's manga club swaps their bodies!
+                          Polar opposites in both personalities and hobbies clash in this exciting first volume—follow the adventures of their comedic body swap experiences!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>I LOVE YURI AND I GOT BODYSWAPPED WITH A FUJOSHI! VOLUME 1</h3>
+                  <p>Ajiichi</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>I LOVE YURI AND I GOT BODYSWAPPED WITH A FUJOSHI! VOLUME 1</h3>
+                <p>Ajiichi</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Uncle Isekai.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          When a middle-aged man wakes up from a seventeen-year coma, he tells his nephew Takafumi that he's been adventuring in another world. It's a generation gap comedy 
+                          starring an uncle who bridges two universes!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Uncle from Another World, Vol. 1</h3>
+                   <p>Hotondoshindeiru</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Uncle from Another World, Vol. 1</h3>
+                <p>Hotondoshindeiru</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Slime Tempest.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        With a concept and story by Fuse, the creator of That Time I Got Reincarnated as a Slime, Trinity in Tempest is the grand tour of Rimiru's world that fans have always wanted. 
+                        Through the eyes of three cute little monsters, one from the fox clan, one from the dragon clan, and one from the winged clan, readers will meet the residents of the utopia in Jura Forest,
+                         and get a peek at how they live their lives. The little group's leader, Phos, is a fox girl from the Beast Kingdom of Eurazania. But this isn't just a pleasure trip for her... 
+                         she's visiting Tempest on secret orders from Lord Carrion. What would a demon lord want with Rimiru's monster paradise? 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 600</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>That Time I Got Reincarnated as a Slime: Trinity in Tempest 1</h3>
+                   <p>Mitz Vah/p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>That Time I Got Reincarnated as a Slime: Trinity in Tempest 1</h3>
+                <p>Mitz Vah</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/nobu.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                       The novels center on a bar called "Nobu"—located in Kyoto, Japan, but with a door that is connected to the bar in another world.
+                       The visitors include denizens of the other world, and customers seek out its excellent "Toriaezu Nama" ale and cuisine.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Isekai Izakaya</h3>
+                   <p>Natsuya Semikawa</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Natsuya Semikawa</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Attack on Titan.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls.
+                        What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter.
+                        However, that fragile calm is soon shattered when a colossal titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.
+                        After witnessing a horrific personal loss at the hands of the invading creatures,
+                        Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Based on Hajime Isayama's award-winning manga, Shingeki no Kyojin follows Eren, along with his adopted sister Mikasa Ackerman and his childhood friend Armin Arlert, as they join the brutal war against the titans and race to discover a way of defeating them before the last walls are breached.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Attack on Titan Ch.139</h3>
+                  <p>Hajime Isayama</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Attack on Titan Ch.139</h3>
+                <p>Hajime Isayama</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Horimiya.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A sweet ""aww""-inspiring tale of school life begins!!At school, Kyouko Hori is known for being smart, attractive, and popular. 
+                        On the other hand, her classmate, the boring, gloomy Izumi Miyamura tends to get painted as a ""loser fanboy."" But when a liberally pierced and tattooed (not to mention downright gorgeous) 
+                        Miyamura appears unexpectedly on the doorstep of secretly plain-Jane homebody Hori, these two similarly dissimilar teenagers discover that there are multiple sides to every story...and person!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Horimiya</h3>
+                   <p>Hero</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Horimiya</h3>
+                <p>Hero</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product"></div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Bofuri.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        When it comes to the VRMMO NewWorld Online, Kaede Honjou isn't your run-of-the-mill greenhorn gamer. Forgoing a typical stat allocation for her Great Shielder, 
+                        Maple, she pumps all her points into defense from the get-go! Her reasoning? "I don't want to get hurt." With no magic, agility, or strength to speak of, 
+                        this walking fortress will have to get creative to beat the baddies early on. But little does she know that her pure-stat build will propel her to chaotic 
+                        new heights that even the game admins couldn't account for! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1000</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Bofuri Vol. 1</h3>
+                   <p>Jirou Oimoto</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Natsuya Semikawa</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Slime.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A MEETING OF DEMONIC MINDS!Newly minted demon lord Rimuru has received word of a special assembly of all ten demon lords known as the Walpurgis Council. 
+                        It just so happens that the topic of this particular meeting is how best to punish Rimuru for assuming his new title without their permission.Fortunately, he's got friends in high places who are willing to vouch for his authenticity, and this council could be the perfect opportunity to get revenge on the demon lord Clayman 
+                        for the violence he brought to Tempest. Is this blobby big shot cunning enough to kill two birds with one stone? 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>That Time I Got Reincarnated as a Slime, Vol. 6</h3>
+                   <p>Fuse</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>That Time I Got Reincarnated as a Slime, Vol. 6</h3>
+                <p>Fuse</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product"></div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Dad Vtuber.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        It's bad enough that Takashi's dad is secretly the ultra-popular 'Queen of VTubers', Kizuke Yai, but his mom's a struggling streamer who just can't seem to gain any popularity at all! 
+                        Now the poor boy himself has been roped into the VTubing life, and the hapless young lad has to help both of his parents without the other finding out! Join Takashi as he weathers the 
+                        hellish storm his life has become, all while navigating the trials and tribulations that come with having parents who are just a little bit too online
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>My Dad is the Queen of All VTubers?! Vol. 2</h3>
+                  <p>Wataru Akashingo</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>My Dad is the Queen of All VTubers?! Vol. 2</h3>
+                <p>Wataru Akashingo</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/spider so wat.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Man, becoming the hero of all humans at the age of six? That's rough buddy. But you know, sometimes life is like that. 
+                        Hang in there kid and maybe I'll...wait, what do you mean I don't show up at all this time?! This is outrageous!! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>So I'm a Spider, So What?, Vol. 11</h3>
+                   <p>Okina Baba</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>So I'm a Spider, So What?, Vol. 11</h3>
+                <p>Okina Baba</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="pre-order-product">Pre-Order</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Cooking Isekai.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        It's great being a hero! Super powers, loved by every-- wait, what? Brought over by mistake? These stats are awful, and the kingdom sure seems sketchy...
+                        And so begins Mukouda Tsuyoshi's life in another world. And if he thought his strength was bad, his special skill is... accessing his old online supermarket?! It's useless for combat, but if he plays his cards right, there's gold in rare goods. At least, that's what Mukouda thinks, but it turns out his modern food might be more special than it appears - and in this world, 
+                        Japanese food isn't an everyday sight! Quiet days lead to silent storms, especially once a gluttonous fenrir starts causing trouble and asking for seconds! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 600</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Campfire Cooking in Another World with My Absurd Skill Volume 1</h3>
+                   <p>Akagishi K/p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Campfire Cooking in Another World with My Absurd Skill Volume 1</h3>
+                <p>Akagishi K</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Grand Blue Dreaming.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        After moving out on his own to a seaside town, Iori Kitahara makes a college debut he never anticipated. 
+                        A new chapter of his life unfolds, full of diving with beautiful girls and shenanigans with a gaggle of lovable bastards! 
+                        Idiot-expert Kenji Inoue and au naturel authority Kimitake Yoshioka bring you a glorious college tale filled with booze-fueled antics! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 200</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Grand Blue Dreaming Chapter 50</h3>
+                   <p>Kenji Inoue</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Grand Blue Dreaming Chapter 50</h3>
+                <p>Kenji Inoue</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Rent a Girlfriend.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Anime coming July 2020! You can rent a girlfriend, but can you buy love? Reeling from a bad breakup, Kazuya rents the beautiful, polite Chizuru for a date. But rock bottom might be so much lower than he thought! Chizuru is much more than the pretty face and sweet demeanor he thought he'd bargained for...
+                        In today's Japan, ""rental"" services can deliver an afternoon with a ""friend,"" a ""parent,"" even a fake girlfriend! After a staggering betrayal by his girlfriend, hapless freshman Kazuya gets just desperate enough to give it a try. 
+                        But he quickly discovers how complicated it can be to ""rent"" an emotional connection, and his new ""girlfriend,"" who's trying to keep her side hustle secret, will panic when she finds out her real life and Kazuya's are intertwined in surprising ways! 
+                        Family, school, and life all start to go wrong, too... It's sweet but naïve boy meets cute but ruthless girl in this 21st-century manga rom-com! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Rent-A-Girlfriend 1</h3>
+                  <p>Reiji Miyajima</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Rent-A-Girlfriend 1</h3>
+                <p>Reiji Miyajima</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="sale-product">Sale</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Soul Eater.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Maka is a weapon meister, determined to turn her partner, a living scythe named Soul Eater, into a powerful death scythe - 
+                        the ultimate weapon of Death himself! Charged with the task of collecting and devouring the tainted souls of ninety-nine humans and one witch, Maka and her fellow meisters strive to master their weapons as they face off against 
+                        the bizarre and dangerous minions of the underworld. But the meisters' own personal quirks may prove a bigger obstacle than any sultry enchantress! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Soul Eater, Vol. 1</h3>
+                   <p>Atsushi Ohkubo</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Soul Eater, Vol. 1</h3>
+                <p>Atsushi Ohkubo</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Mushoku Tensei.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A Second Chance at Life!
+                        Just when an unemployed thirty-four-year-old otaku reaches a dead end in life and decides that it’s time to turn over a new leaf?he gets run over by a truck and dies! 
+                        Shockingly, he finds himself reborn into an infant’s body in a strange, new world of swords and magic. His new identity is Rudeus Grayrat, but he still retains the memories 
+                        of his previous life. Follow Rudeus from infancy to adulthood, as he struggles to redeem himself in a wondrous yet dangerous world.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1000</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Mushoku Tensei: Jobless Reincarnation Vol. 1</h3>
+                   <p>Rifujin na Magonote</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Rifujin na Magonote</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="pre-order-product">Pre-Order</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Doughnuts.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          A yuri romance for the modern career woman!
+                          Uno Hinako throws herself into makeup, fashion, and falling in love, hoping that will make her seem "normal" to the other people at her job. 
+                          But no matter how hard she tries, she's a self-doubting mess inside, and her attempts at "normal" romance with men just keep failing. When she starts to think she might be alone forever, 
+                          a new normal presents itself in the form of her relationship with Asahi Sato, a level-headed woman who works at her company. It starts as respect, and then it becomes far more intimate.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Doughnuts Under a Crescent Moon Vol. 1</h3>
+                   <p>Shio Usui</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Doughnuts Under a Crescent Moon Vol. 1</h3>
+                <p>Shio Usui</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Yuri Fujoshi.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          Meet Reiji Yoshida: a yuri otaku that loves yuri more than anything else in the world. All he wants is to enjoy his hobby in peace, but trouble ensues when he crosses paths with Mitsuru Hoshina, a fujoshi who is obsessed with boys' love. Hijinks ensue, and a vengeful ghost residing in their school's manga club swaps their bodies!
+                          Polar opposites in both personalities and hobbies clash in this exciting first volume—follow the adventures of their comedic body swap experiences!
+                          Meet Reiji Yoshida: a yuri otaku that loves yuri more than anything else in the world. All he wants is to enjoy his hobby in peace, but trouble ensues when he crosses paths with Mitsuru Hoshina, a fujoshi who is obsessed with boys' love. Hijinks ensue, and a vengeful ghost residing in their school's manga club swaps their bodies!
+                          Polar opposites in both personalities and hobbies clash in this exciting first volume—follow the adventures of their comedic body swap experiences!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>I LOVE YURI AND I GOT BODYSWAPPED WITH A FUJOSHI! VOLUME 1</h3>
+                  <p>Ajiichi</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>I LOVE YURI AND I GOT BODYSWAPPED WITH A FUJOSHI! VOLUME 1</h3>
+                <p>Ajiichi</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Uncle Isekai.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          When a middle-aged man wakes up from a seventeen-year coma, he tells his nephew Takafumi that he's been adventuring in another world. It's a generation gap comedy 
+                          starring an uncle who bridges two universes!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Uncle from Another World, Vol. 1</h3>
+                   <p>Hotondoshindeiru</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Uncle from Another World, Vol. 1</h3>
+                <p>Hotondoshindeiru</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Slime Tempest.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        With a concept and story by Fuse, the creator of That Time I Got Reincarnated as a Slime, Trinity in Tempest is the grand tour of Rimiru's world that fans have always wanted. 
+                        Through the eyes of three cute little monsters, one from the fox clan, one from the dragon clan, and one from the winged clan, readers will meet the residents of the utopia in Jura Forest,
+                         and get a peek at how they live their lives. The little group's leader, Phos, is a fox girl from the Beast Kingdom of Eurazania. But this isn't just a pleasure trip for her... 
+                         she's visiting Tempest on secret orders from Lord Carrion. What would a demon lord want with Rimiru's monster paradise? 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 600</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>That Time I Got Reincarnated as a Slime: Trinity in Tempest 1</h3>
+                   <p>Mitz Vah/p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>That Time I Got Reincarnated as a Slime: Trinity in Tempest 1</h3>
+                <p>Mitz Vah</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/nobu.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                       The novels center on a bar called "Nobu"—located in Kyoto, Japan, but with a door that is connected to the bar in another world.
+                       The visitors include denizens of the other world, and customers seek out its excellent "Toriaezu Nama" ale and cuisine.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Isekai Izakaya</h3>
+                   <p>Natsuya Semikawa</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Natsuya Semikawa</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Attack on Titan.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls.
+                        What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter.
+                        However, that fragile calm is soon shattered when a colossal titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.
+                        After witnessing a horrific personal loss at the hands of the invading creatures,
+                        Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Based on Hajime Isayama's award-winning manga, Shingeki no Kyojin follows Eren, along with his adopted sister Mikasa Ackerman and his childhood friend Armin Arlert, as they join the brutal war against the titans and race to discover a way of defeating them before the last walls are breached.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Attack on Titan Ch.139</h3>
+                  <p>Hajime Isayama</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Attack on Titan Ch.139</h3>
+                <p>Hajime Isayama</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Horimiya.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A sweet ""aww""-inspiring tale of school life begins!!At school, Kyouko Hori is known for being smart, attractive, and popular. 
+                        On the other hand, her classmate, the boring, gloomy Izumi Miyamura tends to get painted as a ""loser fanboy."" But when a liberally pierced and tattooed (not to mention downright gorgeous) 
+                        Miyamura appears unexpectedly on the doorstep of secretly plain-Jane homebody Hori, these two similarly dissimilar teenagers discover that there are multiple sides to every story...and person!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Horimiya</h3>
+                   <p>Hero</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Horimiya</h3>
+                <p>Hero</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product"></div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Bofuri.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        When it comes to the VRMMO NewWorld Online, Kaede Honjou isn't your run-of-the-mill greenhorn gamer. Forgoing a typical stat allocation for her Great Shielder, 
+                        Maple, she pumps all her points into defense from the get-go! Her reasoning? "I don't want to get hurt." With no magic, agility, or strength to speak of, 
+                        this walking fortress will have to get creative to beat the baddies early on. But little does she know that her pure-stat build will propel her to chaotic 
+                        new heights that even the game admins couldn't account for! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1000</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Bofuri Vol. 1</h3>
+                   <p>Jirou Oimoto</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Natsuya Semikawa</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Slime.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A MEETING OF DEMONIC MINDS!Newly minted demon lord Rimuru has received word of a special assembly of all ten demon lords known as the Walpurgis Council. 
+                        It just so happens that the topic of this particular meeting is how best to punish Rimuru for assuming his new title without their permission.Fortunately, he's got friends in high places who are willing to vouch for his authenticity, and this council could be the perfect opportunity to get revenge on the demon lord Clayman 
+                        for the violence he brought to Tempest. Is this blobby big shot cunning enough to kill two birds with one stone? 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>That Time I Got Reincarnated as a Slime, Vol. 6</h3>
+                   <p>Fuse</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>That Time I Got Reincarnated as a Slime, Vol. 6</h3>
+                <p>Fuse</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product"></div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Dad Vtuber.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        It's bad enough that Takashi's dad is secretly the ultra-popular 'Queen of VTubers', Kizuke Yai, but his mom's a struggling streamer who just can't seem to gain any popularity at all! 
+                        Now the poor boy himself has been roped into the VTubing life, and the hapless young lad has to help both of his parents without the other finding out! Join Takashi as he weathers the 
+                        hellish storm his life has become, all while navigating the trials and tribulations that come with having parents who are just a little bit too online
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>My Dad is the Queen of All VTubers?! Vol. 2</h3>
+                  <p>Wataru Akashingo</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>My Dad is the Queen of All VTubers?! Vol. 2</h3>
+                <p>Wataru Akashingo</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/spider so wat.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Man, becoming the hero of all humans at the age of six? That's rough buddy. But you know, sometimes life is like that. 
+                        Hang in there kid and maybe I'll...wait, what do you mean I don't show up at all this time?! This is outrageous!! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>So I'm a Spider, So What?, Vol. 11</h3>
+                   <p>Okina Baba</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>So I'm a Spider, So What?, Vol. 11</h3>
+                <p>Okina Baba</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="pre-order-product">Pre-Order</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Cooking Isekai.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        It's great being a hero! Super powers, loved by every-- wait, what? Brought over by mistake? These stats are awful, and the kingdom sure seems sketchy...
+                        And so begins Mukouda Tsuyoshi's life in another world. And if he thought his strength was bad, his special skill is... accessing his old online supermarket?! It's useless for combat, but if he plays his cards right, there's gold in rare goods. At least, that's what Mukouda thinks, but it turns out his modern food might be more special than it appears - and in this world, 
+                        Japanese food isn't an everyday sight! Quiet days lead to silent storms, especially once a gluttonous fenrir starts causing trouble and asking for seconds! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 600</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Campfire Cooking in Another World with My Absurd Skill Volume 1</h3>
+                   <p>Akagishi K/p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Campfire Cooking in Another World with My Absurd Skill Volume 1</h3>
+                <p>Akagishi K</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Grand Blue Dreaming.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        After moving out on his own to a seaside town, Iori Kitahara makes a college debut he never anticipated. 
+                        A new chapter of his life unfolds, full of diving with beautiful girls and shenanigans with a gaggle of lovable bastards! 
+                        Idiot-expert Kenji Inoue and au naturel authority Kimitake Yoshioka bring you a glorious college tale filled with booze-fueled antics! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 200</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Grand Blue Dreaming Chapter 50</h3>
+                   <p>Kenji Inoue</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Grand Blue Dreaming Chapter 50</h3>
+                <p>Kenji Inoue</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Rent a Girlfriend.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Anime coming July 2020! You can rent a girlfriend, but can you buy love? Reeling from a bad breakup, Kazuya rents the beautiful, polite Chizuru for a date. But rock bottom might be so much lower than he thought! Chizuru is much more than the pretty face and sweet demeanor he thought he'd bargained for...
+                        In today's Japan, ""rental"" services can deliver an afternoon with a ""friend,"" a ""parent,"" even a fake girlfriend! After a staggering betrayal by his girlfriend, hapless freshman Kazuya gets just desperate enough to give it a try. 
+                        But he quickly discovers how complicated it can be to ""rent"" an emotional connection, and his new ""girlfriend,"" who's trying to keep her side hustle secret, will panic when she finds out her real life and Kazuya's are intertwined in surprising ways! 
+                        Family, school, and life all start to go wrong, too... It's sweet but naïve boy meets cute but ruthless girl in this 21st-century manga rom-com! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Rent-A-Girlfriend 1</h3>
+                  <p>Reiji Miyajima</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Rent-A-Girlfriend 1</h3>
+                <p>Reiji Miyajima</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="sale-product">Sale</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Soul Eater.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Maka is a weapon meister, determined to turn her partner, a living scythe named Soul Eater, into a powerful death scythe - 
+                        the ultimate weapon of Death himself! Charged with the task of collecting and devouring the tainted souls of ninety-nine humans and one witch, Maka and her fellow meisters strive to master their weapons as they face off against 
+                        the bizarre and dangerous minions of the underworld. But the meisters' own personal quirks may prove a bigger obstacle than any sultry enchantress! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Soul Eater, Vol. 1</h3>
+                   <p>Atsushi Ohkubo</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Soul Eater, Vol. 1</h3>
+                <p>Atsushi Ohkubo</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Mushoku Tensei.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A Second Chance at Life!
+                        Just when an unemployed thirty-four-year-old otaku reaches a dead end in life and decides that it’s time to turn over a new leaf?he gets run over by a truck and dies! 
+                        Shockingly, he finds himself reborn into an infant’s body in a strange, new world of swords and magic. His new identity is Rudeus Grayrat, but he still retains the memories 
+                        of his previous life. Follow Rudeus from infancy to adulthood, as he struggles to redeem himself in a wondrous yet dangerous world.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1000</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Mushoku Tensei: Jobless Reincarnation Vol. 1</h3>
+                   <p>Rifujin na Magonote</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Rifujin na Magonote</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="pre-order-product">Pre-Order</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Doughnuts.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          A yuri romance for the modern career woman!
+                          Uno Hinako throws herself into makeup, fashion, and falling in love, hoping that will make her seem "normal" to the other people at her job. 
+                          But no matter how hard she tries, she's a self-doubting mess inside, and her attempts at "normal" romance with men just keep failing. When she starts to think she might be alone forever, 
+                          a new normal presents itself in the form of her relationship with Asahi Sato, a level-headed woman who works at her company. It starts as respect, and then it becomes far more intimate.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Doughnuts Under a Crescent Moon Vol. 1</h3>
+                   <p>Shio Usui</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Doughnuts Under a Crescent Moon Vol. 1</h3>
+                <p>Shio Usui</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Yuri Fujoshi.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          Meet Reiji Yoshida: a yuri otaku that loves yuri more than anything else in the world. All he wants is to enjoy his hobby in peace, but trouble ensues when he crosses paths with Mitsuru Hoshina, a fujoshi who is obsessed with boys' love. Hijinks ensue, and a vengeful ghost residing in their school's manga club swaps their bodies!
+                          Polar opposites in both personalities and hobbies clash in this exciting first volume—follow the adventures of their comedic body swap experiences!
+                          Meet Reiji Yoshida: a yuri otaku that loves yuri more than anything else in the world. All he wants is to enjoy his hobby in peace, but trouble ensues when he crosses paths with Mitsuru Hoshina, a fujoshi who is obsessed with boys' love. Hijinks ensue, and a vengeful ghost residing in their school's manga club swaps their bodies!
+                          Polar opposites in both personalities and hobbies clash in this exciting first volume—follow the adventures of their comedic body swap experiences!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>I LOVE YURI AND I GOT BODYSWAPPED WITH A FUJOSHI! VOLUME 1</h3>
+                  <p>Ajiichi</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>I LOVE YURI AND I GOT BODYSWAPPED WITH A FUJOSHI! VOLUME 1</h3>
+                <p>Ajiichi</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Uncle Isekai.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          When a middle-aged man wakes up from a seventeen-year coma, he tells his nephew Takafumi that he's been adventuring in another world. It's a generation gap comedy 
+                          starring an uncle who bridges two universes!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Uncle from Another World, Vol. 1</h3>
+                   <p>Hotondoshindeiru</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Uncle from Another World, Vol. 1</h3>
+                <p>Hotondoshindeiru</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Slime Tempest.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        With a concept and story by Fuse, the creator of That Time I Got Reincarnated as a Slime, Trinity in Tempest is the grand tour of Rimiru's world that fans have always wanted. 
+                        Through the eyes of three cute little monsters, one from the fox clan, one from the dragon clan, and one from the winged clan, readers will meet the residents of the utopia in Jura Forest,
+                         and get a peek at how they live their lives. The little group's leader, Phos, is a fox girl from the Beast Kingdom of Eurazania. But this isn't just a pleasure trip for her... 
+                         she's visiting Tempest on secret orders from Lord Carrion. What would a demon lord want with Rimiru's monster paradise? 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 600</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>That Time I Got Reincarnated as a Slime: Trinity in Tempest 1</h3>
+                   <p>Mitz Vah/p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>That Time I Got Reincarnated as a Slime: Trinity in Tempest 1</h3>
+                <p>Mitz Vah</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/nobu.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                       The novels center on a bar called "Nobu"—located in Kyoto, Japan, but with a door that is connected to the bar in another world.
+                       The visitors include denizens of the other world, and customers seek out its excellent "Toriaezu Nama" ale and cuisine.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Isekai Izakaya</h3>
+                   <p>Natsuya Semikawa</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Natsuya Semikawa</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Attack on Titan.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls.
+                        What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter.
+                        However, that fragile calm is soon shattered when a colossal titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.
+                        After witnessing a horrific personal loss at the hands of the invading creatures,
+                        Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Based on Hajime Isayama's award-winning manga, Shingeki no Kyojin follows Eren, along with his adopted sister Mikasa Ackerman and his childhood friend Armin Arlert, as they join the brutal war against the titans and race to discover a way of defeating them before the last walls are breached.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Attack on Titan Ch.139</h3>
+                  <p>Hajime Isayama</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Attack on Titan Ch.139</h3>
+                <p>Hajime Isayama</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Horimiya.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A sweet ""aww""-inspiring tale of school life begins!!At school, Kyouko Hori is known for being smart, attractive, and popular. 
+                        On the other hand, her classmate, the boring, gloomy Izumi Miyamura tends to get painted as a ""loser fanboy."" But when a liberally pierced and tattooed (not to mention downright gorgeous) 
+                        Miyamura appears unexpectedly on the doorstep of secretly plain-Jane homebody Hori, these two similarly dissimilar teenagers discover that there are multiple sides to every story...and person!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Horimiya</h3>
+                   <p>Hero</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Horimiya</h3>
+                <p>Hero</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product"></div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Bofuri.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        When it comes to the VRMMO NewWorld Online, Kaede Honjou isn't your run-of-the-mill greenhorn gamer. Forgoing a typical stat allocation for her Great Shielder, 
+                        Maple, she pumps all her points into defense from the get-go! Her reasoning? "I don't want to get hurt." With no magic, agility, or strength to speak of, 
+                        this walking fortress will have to get creative to beat the baddies early on. But little does she know that her pure-stat build will propel her to chaotic 
+                        new heights that even the game admins couldn't account for! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1000</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Bofuri Vol. 1</h3>
+                   <p>Jirou Oimoto</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Natsuya Semikawa</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Slime.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A MEETING OF DEMONIC MINDS!Newly minted demon lord Rimuru has received word of a special assembly of all ten demon lords known as the Walpurgis Council. 
+                        It just so happens that the topic of this particular meeting is how best to punish Rimuru for assuming his new title without their permission.Fortunately, he's got friends in high places who are willing to vouch for his authenticity, and this council could be the perfect opportunity to get revenge on the demon lord Clayman 
+                        for the violence he brought to Tempest. Is this blobby big shot cunning enough to kill two birds with one stone? 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>That Time I Got Reincarnated as a Slime, Vol. 6</h3>
+                   <p>Fuse</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>That Time I Got Reincarnated as a Slime, Vol. 6</h3>
+                <p>Fuse</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product"></div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Dad Vtuber.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        It's bad enough that Takashi's dad is secretly the ultra-popular 'Queen of VTubers', Kizuke Yai, but his mom's a struggling streamer who just can't seem to gain any popularity at all! 
+                        Now the poor boy himself has been roped into the VTubing life, and the hapless young lad has to help both of his parents without the other finding out! Join Takashi as he weathers the 
+                        hellish storm his life has become, all while navigating the trials and tribulations that come with having parents who are just a little bit too online
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>My Dad is the Queen of All VTubers?! Vol. 2</h3>
+                  <p>Wataru Akashingo</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>My Dad is the Queen of All VTubers?! Vol. 2</h3>
+                <p>Wataru Akashingo</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/spider so wat.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Man, becoming the hero of all humans at the age of six? That's rough buddy. But you know, sometimes life is like that. 
+                        Hang in there kid and maybe I'll...wait, what do you mean I don't show up at all this time?! This is outrageous!! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>So I'm a Spider, So What?, Vol. 11</h3>
+                   <p>Okina Baba</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>So I'm a Spider, So What?, Vol. 11</h3>
+                <p>Okina Baba</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="pre-order-product">Pre-Order</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Cooking Isekai.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        It's great being a hero! Super powers, loved by every-- wait, what? Brought over by mistake? These stats are awful, and the kingdom sure seems sketchy...
+                        And so begins Mukouda Tsuyoshi's life in another world. And if he thought his strength was bad, his special skill is... accessing his old online supermarket?! It's useless for combat, but if he plays his cards right, there's gold in rare goods. At least, that's what Mukouda thinks, but it turns out his modern food might be more special than it appears - and in this world, 
+                        Japanese food isn't an everyday sight! Quiet days lead to silent storms, especially once a gluttonous fenrir starts causing trouble and asking for seconds! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 600</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Campfire Cooking in Another World with My Absurd Skill Volume 1</h3>
+                   <p>Akagishi K/p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Campfire Cooking in Another World with My Absurd Skill Volume 1</h3>
+                <p>Akagishi K</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Grand Blue Dreaming.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        After moving out on his own to a seaside town, Iori Kitahara makes a college debut he never anticipated. 
+                        A new chapter of his life unfolds, full of diving with beautiful girls and shenanigans with a gaggle of lovable bastards! 
+                        Idiot-expert Kenji Inoue and au naturel authority Kimitake Yoshioka bring you a glorious college tale filled with booze-fueled antics! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 200</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Grand Blue Dreaming Chapter 50</h3>
+                   <p>Kenji Inoue</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Grand Blue Dreaming Chapter 50</h3>
+                <p>Kenji Inoue</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Rent a Girlfriend.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Anime coming July 2020! You can rent a girlfriend, but can you buy love? Reeling from a bad breakup, Kazuya rents the beautiful, polite Chizuru for a date. But rock bottom might be so much lower than he thought! Chizuru is much more than the pretty face and sweet demeanor he thought he'd bargained for...
+                        In today's Japan, ""rental"" services can deliver an afternoon with a ""friend,"" a ""parent,"" even a fake girlfriend! After a staggering betrayal by his girlfriend, hapless freshman Kazuya gets just desperate enough to give it a try. 
+                        But he quickly discovers how complicated it can be to ""rent"" an emotional connection, and his new ""girlfriend,"" who's trying to keep her side hustle secret, will panic when she finds out her real life and Kazuya's are intertwined in surprising ways! 
+                        Family, school, and life all start to go wrong, too... It's sweet but naïve boy meets cute but ruthless girl in this 21st-century manga rom-com! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Rent-A-Girlfriend 1</h3>
+                  <p>Reiji Miyajima</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Rent-A-Girlfriend 1</h3>
+                <p>Reiji Miyajima</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="sale-product">Sale</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Soul Eater.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        Maka is a weapon meister, determined to turn her partner, a living scythe named Soul Eater, into a powerful death scythe - 
+                        the ultimate weapon of Death himself! Charged with the task of collecting and devouring the tainted souls of ninety-nine humans and one witch, Maka and her fellow meisters strive to master their weapons as they face off against 
+                        the bizarre and dangerous minions of the underworld. But the meisters' own personal quirks may prove a bigger obstacle than any sultry enchantress! 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Soul Eater, Vol. 1</h3>
+                   <p>Atsushi Ohkubo</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Soul Eater, Vol. 1</h3>
+                <p>Atsushi Ohkubo</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Mushoku Tensei.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        A Second Chance at Life!
+                        Just when an unemployed thirty-four-year-old otaku reaches a dead end in life and decides that it’s time to turn over a new leaf?he gets run over by a truck and dies! 
+                        Shockingly, he finds himself reborn into an infant’s body in a strange, new world of swords and magic. His new identity is Rudeus Grayrat, but he still retains the memories 
+                        of his previous life. Follow Rudeus from infancy to adulthood, as he struggles to redeem himself in a wondrous yet dangerous world.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1000</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Mushoku Tensei: Jobless Reincarnation Vol. 1</h3>
+                   <p>Rifujin na Magonote</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Isekai Izakaya</h3>
+                <p>Rifujin na Magonote</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="pre-order-product">Pre-Order</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Doughnuts.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          A yuri romance for the modern career woman!
+                          Uno Hinako throws herself into makeup, fashion, and falling in love, hoping that will make her seem "normal" to the other people at her job. 
+                          But no matter how hard she tries, she's a self-doubting mess inside, and her attempts at "normal" romance with men just keep failing. When she starts to think she might be alone forever, 
+                          a new normal presents itself in the form of her relationship with Asahi Sato, a level-headed woman who works at her company. It starts as respect, and then it becomes far more intimate.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 800</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Doughnuts Under a Crescent Moon Vol. 1</h3>
+                   <p>Shio Usui</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Doughnuts Under a Crescent Moon Vol. 1</h3>
+                <p>Shio Usui</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="new-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Yuri Fujoshi.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          Meet Reiji Yoshida: a yuri otaku that loves yuri more than anything else in the world. All he wants is to enjoy his hobby in peace, but trouble ensues when he crosses paths with Mitsuru Hoshina, a fujoshi who is obsessed with boys' love. Hijinks ensue, and a vengeful ghost residing in their school's manga club swaps their bodies!
+                          Polar opposites in both personalities and hobbies clash in this exciting first volume—follow the adventures of their comedic body swap experiences!
+                          Meet Reiji Yoshida: a yuri otaku that loves yuri more than anything else in the world. All he wants is to enjoy his hobby in peace, but trouble ensues when he crosses paths with Mitsuru Hoshina, a fujoshi who is obsessed with boys' love. Hijinks ensue, and a vengeful ghost residing in their school's manga club swaps their bodies!
+                          Polar opposites in both personalities and hobbies clash in this exciting first volume—follow the adventures of their comedic body swap experiences!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 700</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>I LOVE YURI AND I GOT BODYSWAPPED WITH A FUJOSHI! VOLUME 1</h3>
+                  <p>Ajiichi</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>I LOVE YURI AND I GOT BODYSWAPPED WITH A FUJOSHI! VOLUME 1</h3>
+                <p>Ajiichi</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="notag-product">New</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Uncle Isekai.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                          When a middle-aged man wakes up from a seventeen-year coma, he tells his nephew Takafumi that he's been adventuring in another world. It's a generation gap comedy 
+                          starring an uncle who bridges two universes!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 1100</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>Uncle from Another World, Vol. 1</h3>
+                   <p>Hotondoshindeiru</p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>Uncle from Another World, Vol. 1</h3>
+                <p>Hotondoshindeiru</p>
+              </div>
+          </div>
+        </div>
+        <div class="container-category">
+          <div class="hot-product">Hot</div>
+          <div class="product-container">
+              <div class="product-image"><img src="image/Book  Cover/Slime Tempest.png" alt=""></div>
+              <div class="product-overlay">
+                  <a href="product page no login.html">
+                    <div class="product-text">
+                      <h1>Synopsis</h1>
+                      <p>
+                        With a concept and story by Fuse, the creator of That Time I Got Reincarnated as a Slime, Trinity in Tempest is the grand tour of Rimiru's world that fans have always wanted. 
+                        Through the eyes of three cute little monsters, one from the fox clan, one from the dragon clan, and one from the winged clan, readers will meet the residents of the utopia in Jura Forest,
+                         and get a peek at how they live their lives. The little group's leader, Phos, is a fox girl from the Beast Kingdom of Eurazania. But this isn't just a pleasure trip for her... 
+                         she's visiting Tempest on secret orders from Lord Carrion. What would a demon lord want with Rimiru's monster paradise? 
+                      </p>
+                    </div>
+                  </a>
+                  <div class="product-details">
+                   <h1>JP¥ 600</h1>
+                   <button id="preview">Preview</button>
+                   <button onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                   <h3>That Time I Got Reincarnated as a Slime: Trinity in Tempest 1</h3>
+                   <p>Mitz Vah/p>
+                  </div>
+              </div>
+              <div class="product-title">
+                <h3>That Time I Got Reincarnated as a Slime: Trinity in Tempest 1</h3>
+                <p>Mitz Vah</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <div class= "footer-container">
+          <div class="footer-logo"><img src="image/BW Logo Full.png" alt=""></div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">T&C's</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="https://bookwalker.jp/top/">日本語サイト</a></li>
+            </ul>
+          </div>
+          <div class= "footer-socials">
+            <ul>
+              <li><a href="https://www.facebook.com/bookwalkerglobal"><img src="image/Facebook.svg" alt=""></a></li>
+              <li><a href="https://www.instagram.com/bookwalker_gl/"><img src="image/intagram.svg" alt=""></a></li>
+              <li><a href="https://twitter.com/BOOKWALKER_GL"><img src="image/twitter.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>  
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
